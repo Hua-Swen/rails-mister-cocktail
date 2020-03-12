@@ -1,0 +1,93 @@
+// Place all the styles related to the Cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background-color: #FFFFFF;
+}
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 50px;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.banner h1 {
+  color: #FFFFFF;
+  text-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+  font-size: 40px;
+}
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-category a {
+  color: #FFFFFF;
+  text-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+  font-size: 30px;
+}
+
+.no-underline {
+  text-decoration: none !important;
+  // background-color:#000000;
+  // opacity:0;
+  // transition: all 1s;
+  -webkit-filter: brightness(100%);
+}
+
+.no-underline :hover {
+  // text-decoration:none;
+  // width:100%;
+  // height:100%;
+  // position:absolute;
+  // opacity:1;
+  // border-radius:30px;
+  .card-category {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+  }
+}
+
+.flex-card {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 24px;
+}
+
+.flex-card h2 {
+ font-size: 40px;
+}
+
+.flex-card ul {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.description-card {
+  width: 800px;
+}
+
+.description-card p {
+  // font-height: 24px;
+  line-height: 32px;
+}

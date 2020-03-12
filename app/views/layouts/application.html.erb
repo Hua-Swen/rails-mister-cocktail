@@ -9,9 +9,34 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
+    <script src="https://kit.fontawesome.com/710f69532c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Bellota+Text|Open+Sans&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <%= link_to cocktails_path, class: "navbar-brand" do %>
+        <i class="fas fa-cocktail">  The Cocktail Bar</i>
+      <% end %>
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <%= link_to "Add a Cocktail", new_cocktail_path, class: "nav-link" %>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <% if params[:controller] == 'cocktails' && (params[:action] == "show" || params[:action] == "index") %>
+      <%= yield %>
+    <% else %>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <% end %>
+
   </body>
 </html>

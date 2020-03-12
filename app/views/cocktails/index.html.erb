@@ -1,0 +1,21 @@
+<div class="banner" style="background-image: url(https://images.pexels.com/photos/331107/pexels-photo-331107.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)">
+<!-- <img src="../../images/logo.png" height="200" width="200"> -->
+<h1>The Cocktail Bar</h1>
+</div>
+
+
+<div class="container">
+  <div class="row row-cols-md-3 mt-5">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col mb-4">
+        <%= link_to cocktail_path(cocktail), class: "no-underline" do %>
+          <div class="card-category" style="background-image: url(<%= cocktail.image_url %>)">
+            <!-- <img class="card-img-top" src="<%= cocktail.image_url %>" alt="Card image cap"> -->
+              <h5><%= cocktail.name %></h5>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+</div>
+

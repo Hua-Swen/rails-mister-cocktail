@@ -11,3 +11,13 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+@import "cocktails.scss";
+
+h1 h2 {
+  font-family: 'Bellota Text', cursive;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
