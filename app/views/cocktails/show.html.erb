@@ -1,5 +1,13 @@
 
-<div class="banner"  style="background-image: url('<%= cl_image_path @cocktail.photo.key %>')">
+<div class="banner"  style="background-image: url(<%= cl_image_path @cocktail.photo.key %>)">
+  <h1>
+    <span id="banner-typed-text"></span>
+  </h1>
+</div>
+
+
+
+<div id="typed-strings">
   <h1><%= @cocktail.name %></h1>
 </div>
 
@@ -12,11 +20,14 @@
   </div>
 
   <div>
-    <h2>Doses:</h2>
+    <h2>Recipe:</h2>
     <ul>
       <% @cocktail.doses.each do |dose| %>
         <li>
-          <p><%= dose.description %> of <%= dose.ingredient.name %> <%= link_to "Delete", cocktail_dose_path(@cocktail, dose), method: :delete, class: "btn btn-outline-secondary btn-sm" %></p>
+          <p><%= dose.description %> of <%= dose.ingredient.name %> <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete, class: "btn btn-outline-secondary btn-sm border-0", data: {confirm: "Are you sure you want to delete?"} do %>
+            <i class="fas fa-trash"></i>
+            <% end %>
+          </p>
         </li>
       <% end %>
     </ul>

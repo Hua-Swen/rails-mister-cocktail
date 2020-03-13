@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
-    <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
     <script src="https://kit.fontawesome.com/710f69532c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Bellota+Text|Open+Sans&display=swap" rel="stylesheet">
   </head>
@@ -23,7 +21,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <%= link_to "Add a Cocktail", new_cocktail_path, class: "nav-link" %>
+            <%= link_to "Add a Cocktail", new_cocktail_path, class: "btn btn-outline-secondary" %>
           </li>
           </li>
         </ul>
@@ -38,5 +36,7 @@
     </div>
     <% end %>
 
+    <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
+    <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>
 </html>

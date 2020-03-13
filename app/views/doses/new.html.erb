@@ -5,6 +5,10 @@
   <%= f.button :submit, class: "btn btn-outline-secondary" %>
 <% end %>
 
-<%= link_to "Back to cocktail", cocktail_path(@cocktail), class: "btn btn-outline-secondary mt-4" %>
+<%= link_to cocktail_path(@cocktail), class: "btn btn-outline-secondary mt-4" do %>
+Back to <strong><%= @cocktail.name %></strong>
+<% end %>
 
-<%= link_to "Back to homepage", cocktails_path, class: "btn btn-outline-secondary mt-4" %>
+<%= link_to cocktail_path(@cocktail), class: "btn btn-outline-secondary mt-4" do %>
+Back to <strong>homepage</strong>
+<% end %>

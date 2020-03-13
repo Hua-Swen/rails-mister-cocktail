@@ -9,7 +9,7 @@ body {
   background-size: cover;
   background-position: center;
   padding: 50px;
-  height: 50vh;
+  height: 75vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,12 +18,43 @@ body {
 
 .banner h1 {
   color: #FFFFFF;
-  text-shadow: 0px 0px 4px rgba(0,0,0,0.2);
-  font-size: 40px;
+  text-shadow: 0px 0px 4px rgba(0,0,0,0.5);
+  font-size: 80px;
+  font-family: 'Bellota Text', cursive;
+}
+
+.card-full {
+  text-decoration: none !important;
+  background-color:black;
+  display:block;
+  opacity:1;
+  filter:alpha(opacity=100);
+  transition: all 1s ease;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  // width:200px;
+  // background: brightness(100%);
+}
+
+.card-full :hover {
+  // text-decoration:none;
+  opacity:0.7;
+  transition: all 1s ease;
+  transform: scale(1.2);
+  .card-category {
+    background-position: none;
+  }
+  // background-color:#000000;
+  // border-radius:30px;
+  // background: brightness(70%);
+
+
 }
 
 .card-category {
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
   height: 240px;
   display: flex;
@@ -33,39 +64,47 @@ body {
   font-size: 24px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 16px;
+  // border: 1px solid rgb(0,0,0);
 }
 
-.card-category a {
-  color: #FFFFFF;
-  text-shadow: 0px 0px 4px rgba(0,0,0,0.2);
-  font-size: 30px;
-}
-
-// .no-underline {
-//   text-decoration: none !important;
-//   // background-color:#000000;
-//   // opacity:0;
-//   // transition: all 1s;
-//   -webkit-filter: brightness(100%);
+// .card-full {
+//   width: 373px;
+//   height: 300px;
+//   position: relative;
+//   display: inline-block;
+//   transition: all ease 1s;
 // }
 
-// .no-underline :hover {
-//   // text-decoration:none;
-//   // width:100%;
-//   // height:100%;
+// .card-full:hover > .overlay {
+//     position: absolute;
+//     top: 0;
+//     width:100%;
+//     height:100%;
+//     left: 0;
+//     background-color:#000;
+//     opacity:0.5;
+//     z-index: 100;
+//     display: block;
+// }
+
+// .card-category {
+//   display: none;
+//   position: absolute;
+//   top: 100px;
+//   left: 0;
+//   text-align: center;
+// }
+
+
+// span {
+//   z-index: 5;
+//   // color: #FFFFFF;
+//   // text-shadow: 0px 0px 4px rgba(0,0,0,0.2);
+//   // background-position: none;
 //   // position:absolute;
-//   // opacity:1;
-//   // border-radius:30px;
-//   .card-category {
-//     -webkit-filter: brightness(70%);
-//     -webkit-transition: all 1s ease;
-//     -moz-transition: all 1s ease;
-//     -o-transition: all 1s ease;
-//     -ms-transition: all 1s ease;
-//     transition: all 1s ease;
-//   }
+//   // font-size: 30px;
 // }
 
 .flex-card {

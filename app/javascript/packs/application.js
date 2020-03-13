@@ -16,4 +16,25 @@
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
 
-console.log('Hello World from Webpacker')
+import Typed from 'typed.js';
+
+
+const text = "Test"
+
+const loadDynamicBannerText = () => {
+  new Typed('#banner-typed-text', {
+    stringsElement: '#typed-strings',
+    typeSpeed: 50,
+    loop: false
+  });
+}
+
+loadDynamicBannerText();
+// console.log('Hello World from Webpacker')
+
+// $(".pic").hover(
+//   function(){
+//       $(".card-category", this).css("display", "block");
+//   }, function(){
+//       $(".card-category", this).css("display", "none");
+// });
