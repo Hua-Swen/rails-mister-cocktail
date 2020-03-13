@@ -9,7 +9,7 @@
     <% @cocktails.each do |cocktail| %>
       <div class="col mb-4">
         <%= link_to cocktail_path(cocktail), class: "no-underline" do %>
-          <div class="card-category" style="background-image: url(<%= cocktail.photo %>)">
+          <div class="card-category" style="background-image: url('<%= cl_image_path cocktail.photo.key %>')">
             <!-- <img class="card-img-top" src="<%= cocktail.image_url %>" alt="Card image cap"> -->
               <h5><%= cocktail.name %></h5>
           </div>
