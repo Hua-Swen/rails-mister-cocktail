@@ -43,30 +43,30 @@ body {
   font-size: 30px;
 }
 
-.no-underline {
-  text-decoration: none !important;
-  // background-color:#000000;
-  // opacity:0;
-  // transition: all 1s;
-  -webkit-filter: brightness(100%);
-}
+// .no-underline {
+//   text-decoration: none !important;
+//   // background-color:#000000;
+//   // opacity:0;
+//   // transition: all 1s;
+//   -webkit-filter: brightness(100%);
+// }
 
-.no-underline :hover {
-  // text-decoration:none;
-  // width:100%;
-  // height:100%;
-  // position:absolute;
-  // opacity:1;
-  // border-radius:30px;
-  .card-category {
-    -webkit-filter: brightness(70%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-  }
-}
+// .no-underline :hover {
+//   // text-decoration:none;
+//   // width:100%;
+//   // height:100%;
+//   // position:absolute;
+//   // opacity:1;
+//   // border-radius:30px;
+//   .card-category {
+//     -webkit-filter: brightness(70%);
+//     -webkit-transition: all 1s ease;
+//     -moz-transition: all 1s ease;
+//     -o-transition: all 1s ease;
+//     -ms-transition: all 1s ease;
+//     transition: all 1s ease;
+//   }
+// }
 
 .flex-card {
   display: flex;
