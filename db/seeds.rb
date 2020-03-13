@@ -9,29 +9,29 @@ require 'open-uri'
 require 'json'
 require 'faker'
 
-puts "destroying db"
+# puts "destroying db"
 # Ingredient.destroy_all
 # Cocktail.destroy_all
 
-puts "creating ingredients"
-url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
+# puts "creating ingredients"
+# url = "https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list"
 
-api_file = open(url).read
-api_doc = JSON.parse(api_file)
+# api_file = open(url).read
+# api_doc = JSON.parse(api_file)
 
-ingredients = api_doc.flatten
-ingredients.delete_at(0)
+# ingredients = api_doc.flatten
+# ingredients.delete_at(0)
 
 
 
-ingredients[0].each do |ingredient|
-  ingredient = Ingredient.new(name: ingredient["strIngredient1"])
-  ingredient.save
-end
+# ingredients[0].each do |ingredient|
+#   ingredient = Ingredient.new(name: ingredient["strIngredient1"])
+#   ingredient.save
+# end
 
-# puts Ingredient.all
+# # puts Ingredient.all
 
-puts "ingredients created"
+# puts "ingredients created"
 
 puts "creating cocktails"
 
