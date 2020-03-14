@@ -1,5 +1,5 @@
 <div class="banner" style="background-image: url(https://images.pexels.com/photos/331107/pexels-photo-331107.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)">
-<%= cl_image_tag("ru4vyiipgwwpv9dooufn",
+<%= cl_image_tag("tgovwi4uxfpflnu2u0ku",
       width: 300, height: 300, crop: :fill) %>
 </div>
 
@@ -14,7 +14,9 @@
             <!-- <div class="overlay"></div> -->
             <div class="card-category" style="background-image: url(<%= cl_image_path cocktail.photo.key %>)">
               <!-- <img class="card-img-top" src="<%= cocktail.image_url %>" alt="Card image cap"> -->
+            <div class="card-text">
                 <h5><%= cocktail.name %></h5>
+            </div>
             </div>
           <% end %>
         <!-- </div> -->
