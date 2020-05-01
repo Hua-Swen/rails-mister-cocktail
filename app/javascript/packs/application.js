@@ -15,21 +15,15 @@
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
-
+import { cocktailApi } from '../plugins/cocktail_api';
+import { placeholderConfirm } from '../plugins/cocktail_api';
 import Typed from 'typed.js';
+import { loadDynamicBannerText } from '../plugins/load_dynamic_banner_text';
 
-
-const text = "Test"
-
-const loadDynamicBannerText = () => {
-  new Typed('#banner-typed-text', {
-    stringsElement: '#typed-strings',
-    typeSpeed: 50,
-    loop: false
-  });
-}
 
 loadDynamicBannerText();
+cocktailApi();
+placeholderConfirm();
 // console.log('Hello World from Webpacker')
 
 // $(".pic").hover(

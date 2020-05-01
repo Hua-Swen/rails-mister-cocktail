@@ -1,7 +1,7 @@
 // Graphical variables
-// @import "config/fonts";
-// @import "config/colors";
-// @import "config/bootstrap_variables";
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
 
 // External libraries
 @import "bootstrap/scss/bootstrap";
@@ -20,4 +20,9 @@ h1 h2 {
 
 p {
   font-family: 'Open Sans', sans-serif;
+}
+
+.static-gray {
+  color: $light-gray;
+  font-style: italic;
 }

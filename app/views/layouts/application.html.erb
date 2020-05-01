@@ -36,6 +36,40 @@
     </div>
     <% end %>
 
+    <div class="footer">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <div class="website-description">
+            <h1>The Cocktail Bar</h1>
+            <p>The Cocktail Bar is a website where I test ideas and practice web development. If you like it do give my profile a look!</p>
+          </div>
+          <div class="avatar-middle">
+            <%= cl_image_tag("formal_passport_pic", class: "avatar-circle") %>
+            <p>Tan Hua Swen</p>
+          </div>
+          <div class="logo-list">
+            <p>Follow me on:</p>
+            <ul class="list-inline">
+              <li>
+                <%= link_to "https://www.linkedin.com/in/hua-swen-tan" do %>
+                  <i class="fab fa-linkedin"></i>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to "https://www.facebook.com/tan.huaswen" do %>
+                  <i class="fab fa-facebook-square"></i>
+                <% end %>
+              </li>
+              <li>
+                <%= link_to "https://www.instagram.com/hua_swen" do %>
+                  <i class="fab fa-instagram"></i>
+                <% end %>
+              </li>
+            </ul>
+          </div>
+      </div>
+      </div>
+    </div>
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
     <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>

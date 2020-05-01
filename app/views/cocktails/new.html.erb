@@ -5,8 +5,23 @@
 
 <%= simple_form_for(@cocktail) do |f| %>
   <%= f.error_notification %>
-  <%= f.input :name %>
+  <%= f.input :name, input_html: { id: "cocktail-name" } %>
+  <%= button_tag(type: 'button', id: "cocktail-search") do %>
+    <i class="fas fa-search"></i>
+  <% end %>
   <%= f.input :description, as: :text, input_html: { rows: 5 } %>
+  <%= f.input :preparation, input_html: { id: "preparation-info" } %>
+  <div class="d-flex align-items-center">
+    <div class="checkbox-switch">
+      <label class="switch">
+        <%= f.input_field :preparation_checkbox, as: :boolean, class: "text-checkbox" %>
+        <span class="slider round"></span>
+      </label>
+    </div>
+    <div>
+      <p class="edit-text-margin"><em>Preparation taken from the cocktail db!</em></p>
+    </div>
+  </div>
   <%= f.input :photo, as: :file %>
   <%= f.button :submit, class: "btn btn-outline-secondary" %>
 <% end %>

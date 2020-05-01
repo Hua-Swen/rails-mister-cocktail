@@ -15,12 +15,22 @@
 
 <div class="flex-card">
   <div class="description-card">
+    <div class="description-text">
     <h2>Description:</h2>
     <p><%= @cocktail.description %></p>
+    </div>
+    <div class="preparation-text">
+      <h2>Preparation:</h2>
+      <% if @cocktail.preparation.nil? %>
+        <p class="static-gray">No preparation given!</p>
+      <% else %>
+        <p><%= @cocktail.preparation %></p>
+      <% end %>
+    </div>
   </div>
 
   <div>
-    <h2>Recipe:</h2>
+    <h2>Ingredients:</h2>
     <ul>
       <% @cocktail.doses.each do |dose| %>
         <li>
@@ -38,3 +48,4 @@
   </div>
 
 </div>
+<div class="spacing-bottom"></div>

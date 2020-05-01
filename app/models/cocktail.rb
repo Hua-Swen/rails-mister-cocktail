@@ -5,4 +5,8 @@ class Cocktail < ApplicationRecord
   validates :name, presence: true, uniqueness: true
   validates :description, presence: true, uniqueness: true
   validates :photo, presence: true
+
+  def preparation_checkbox
+    # this ensures that preparation checkbox works, dont ask me why either
+  end
 end
