@@ -16,6 +16,7 @@
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
 import { cocktailApi } from '../plugins/cocktail_api';
+import { ingredientApi } from '../plugins/cocktail_api';
 import { placeholderConfirm } from '../plugins/cocktail_api';
 import Typed from 'typed.js';
 import { loadDynamicBannerText } from '../plugins/load_dynamic_banner_text';
@@ -23,6 +24,7 @@ import { loadDynamicBannerText } from '../plugins/load_dynamic_banner_text';
 
 loadDynamicBannerText();
 cocktailApi();
+ingredientApi();
 placeholderConfirm();
 // console.log('Hello World from Webpacker')
 
